@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio | Venkatesan C.</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+  <nav class="navbar">
+    <h1>Portfolio</h1>
+    <ul>
+      <li><a href="{{ url_for('index') }}">About</a></li>
+      <li><a href="{{ url_for('login') }}">Login</a></li>
+      <li><a href="{{ url_for('register') }}">Register</a></li>
+    </ul>
+  </nav>
+  
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <!-- Add your SVG image here -->
+        <img src="../static/assets/computer.svg" alt="Computer" style="-webkit-transform: scaleX(-1);
+  transform: scaleX(-1);">
+      </div>
+      <div class="col-one">
+        <h3>Hello! <b style="font-size:x-large;">I am</b></h3>
+        <h1>Venkatesan</h1>
+        <p>a passionate frontend developer, based in Chennai, India.</p>
+        <ul class="social-icons">
+          <li><a href="https://www.twitter.com/imvenkatesanc"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/imvenkatesanc"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://www.github.com/imvenkatesanc"><i class="fab fa-github"></i></a></li>
+        </ul>        
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <!-- Add your profile photo here -->
+          <img src="../static/assets/pro-img-2.jpeg" alt="venkatesanc" style="width:500px;height:200px;border-radius: 20%;margin-top: 50px;">
+      </div>
+      <div class="col" id="para">
+        <h2>Hello, I'm Venkatesan,</h2>
+        <!-- Add your about me paragraph and list here -->
+        <p>My name is Venkatesan. I am from Tiruvannamalai and currently residing in Tiruchirappalli.   I am currently pursuing my Bachelors in Information Technology up to my third year with a CGPA of 7.97 at the M.A.M College of Engineering, Trichy.</p>
+        <ul>
+          <li>Age: 20</li>
+          <li>email: venkatesanit2020@gmail.com</li>
+          <li>Phone: 6381881005</li>
+          <li>Address: Chennai, India</li>
+          <li>Status: Availabe</li>
+          <!-- Add more list items here -->
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</body>
+<script src="https://kit.fontawesome.com/21663bf7dc.js" crossorigin="anonymous"></script>
+</html>

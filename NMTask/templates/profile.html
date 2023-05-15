@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Profile</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css') }}">
+</head>
+<body>
+	<div class="container">
+		<div class="heading">Profile</div>
+		<div class="description">React Developer intern</div>
+		<div class="profile-pic">
+			<img src="../static/assets/pro-img-1.jpeg" alt="Profile Picture">
+		</div>
+		<div class="about-me">
+			<div class="about-me-heading">About Me</div>
+			<div class="about-me-description">My name is Venkatesan. I am from Tiruvannamalai and currently residing in Tiruchirappalli.   I am currently pursuing my Bachelors in Information Technology up to my third year with a CGPA of 7.97 at the M.A.M College of Engineering, Trichy.</div>
+		</div>
+		<div class="details">
+			<div class="details-heading">Details</div>
+			<div class="details-subheading">Name</div>
+			<div class="details-description">Venkatesan</div>
+			<div class="details-subheading">Age</div>
+			<div class="details-description">21</div>
+        <div class="details-subheading">Location</div>
+        <div class="details-description">Chennai,India</div>
+        </div>
+        <div class="icons">
+        <div class="icon"><i class="fab fa-facebook"></i></div>
+        <div class="icon"><i class="fab fa-twitter"></i></div>
+        <div class="icon"><i class="fab fa-instagram"></i></div>
+        </div>
+        </div>
+        <form action='/logout' method="post" class="logout-form">
+			<input type="submit" value="Logout" class="logout-button">
+		</form>		  
+        </body>
+        <script src="https://kit.fontawesome.com/21663bf7dc.js" crossorigin="anonymous"></script>
+        </html>
